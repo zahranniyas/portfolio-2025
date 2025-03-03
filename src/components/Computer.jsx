@@ -7,11 +7,24 @@ const Computer = (props) => {
   const group = useRef();
   const { nodes, materials } = useGLTF("/models/mac05-ed.glb");
 
-  const txt = useVideoTexture("/textures/project/project1-2.mp4");
+  const txt = useVideoTexture(
+    props.texture ? props.texture : "/textures/project/meez-vid.mp4"
+  );
 
   useEffect(() => {
     if (txt) {
       txt.flipY = false;
+
+      // Make sure we have the underlying HTMLVideoElement
+      if (txt.image) {
+        // Optionally reset to the beginning
+        txt.image.currentTime = 0;
+        // Start playing
+        txt.image.play().catch((err) => {
+          // Some browsers block autoplay without user gesture
+          console.error("Autoplay failed:", err);
+        });
+      }
     }
   }, [txt]);
 

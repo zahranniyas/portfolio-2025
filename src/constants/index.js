@@ -57,58 +57,60 @@ export const clientReviews = [
 ];
 
 export const myProjects = [
-  {
-    title: "Windsor Castle Banquet - Booking System",
-    desc: "Developed a comprehensive, responsive booking management system featuring role-based access, temporary bookings with automated reminders, integrated payments and discounts, post-event billing, VAT support, and a dashboard for real-time revenue and booking insights.",
-    subdesc:
-      "A modern web solution leveraging React (Vite), Tailwind, GSAP on the frontend, with Node.js (Express) and MongoDB powering the backend, hosted in a VPS hosting",
-    href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
-    texture: "/textures/project/project1.mp4",
-    logo: "/assets/project-logo1-1.png",
+  // {
+  //   title: "Windsor Castle Banquet - Booking System",
+  //   desc: "Developed a comprehensive, responsive booking management system featuring role-based access, temporary bookings with automated reminders, integrated payments and discounts, post-event billing, VAT support, and a dashboard for real-time revenue and booking insights.",
+  //   subdesc:
+  //     "A modern web solution leveraging React (Vite), Tailwind, GSAP on the frontend, with Node.js (Express) and MongoDB powering the backend, hosted in a VPS hosting",
+  //   href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
+  //   texture: "/textures/project/frontier-vd.mp4",
+  //   logo: "/assets/project-logo-front.png",
 
-    logoStyle: {
-      backgroundColor: "#60f5a1",
-      background:
-        "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
-      border: "0.2px solid rgba(208, 213, 221, 1)",
-      boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
-    },
-    spotlight: "/assets/spotlight3.png",
-    tags: [
-      {
-        id: 1,
-        name: "React.js",
-        path: "/assets/react.svg",
-      },
-      {
-        id: 2,
-        name: "TailwindCSS",
-        path: "assets/tailwindcss.png",
-      },
-      {
-        id: 3,
-        name: "GSAP",
-        path: "/assets/logos/gsap-logo.svg",
-      },
-      {
-        id: 4,
-        name: "Node.js",
-        path: "/assets/logos/nodejs.png",
-      },
-      {
-        id: 5,
-        name: "MongoDB",
-        path: "/assets/logos/mongodb-icon.svg",
-      },
-    ],
-  },
+  //   logoStyle: {
+  //     backgroundColor: "#60f5a1",
+  //     background:
+  //       "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+  //     border: "0.2px solid rgba(208, 213, 221, 1)",
+  //     boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
+  //   },
+  //   spotlight: "/assets/spotlight3.png",
+  //   tags: [
+  //     {
+  //       id: 1,
+  //       name: "React.js",
+  //       path: "/assets/react.svg",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "TailwindCSS",
+  //       path: "assets/tailwindcss.png",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "GSAP",
+  //       path: "/assets/logos/gsap-logo.svg",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "Node.js",
+  //       path: "/assets/logos/nodejs.png",
+  //     },
+  //     {
+  //       id: 5,
+  //       name: "MongoDB",
+  //       path: "/assets/logos/mongodb-icon.svg",
+  //     },
+  //   ],
+  // },
+
   {
     title: "Sincler 3x - a 3D Phone Website",
-    desc: "IInspired by the iPhone 15 website, I created a concept site for Sincler featuring Blender-built 3D models for 360-degree views, instant color/size variations, and animated video carousels showcasing product features and specifications.",
+    desc: "Inspired by the iPhone 15 website, I created a concept site for Sincler featuring Blender-built 3D models for 360-degree views, instant color/size variations, and animated video carousels showcasing product features and specifications.",
     subdesc:
       "Developed with React (Vite), Tailwind, GSAP, Three.js for seamless 3D interactions, plus Blender and After Effects for stunning and integrated 3D animations.",
-    href: "https://www.youtube.com/watch?v=y5vE8y_f_OM",
-    texture: "/textures/project/project2.mp4",
+    href: "https://sincler-phone-3x.vercel.app/",
+    github: "https://github.com/zahranniyas/sincler-phone-3x",
+    texture: "/textures/project/sincler-vd.mp4",
     logo: "/assets/project-logo2-1.png",
     logoStyle: {
       backgroundColor: "#13202F",
@@ -145,12 +147,52 @@ export const myProjects = [
     ],
   },
   {
+    title: "Ceylon Fruits & Spices - E-Commerce",
+    desc: "Ceylon Fruits and Spices is an e-commerce platform built with WordPress and WooCommerce, featuring announcement banners, product pages, categories, carts, featured products, user registration, wishlists, secure Sampath Bank payment gateway.",
+    subdesc:
+      "Built on WordPress, Elementor, WooCommerce, and WooCurrency, integrating Sampath Bank’s payment gateway for secure, seamless e-commerce transactions across multiple regions.",
+    href: "https://ceylonfruitsandspices.lk/",
+    github: "",
+    texture: "/textures/project/cfs-vid.mp4",
+    logo: "/assets/project-logo5-1.png",
+    logoStyle: {
+      backgroundColor: "#28010c",
+      border: "0.2px solid #360811",
+      boxShadow: "0px 0px 60px 0px #ff5b5b4d",
+    },
+    spotlight: "/assets/spotlight5-1.png",
+    tags: [
+      {
+        id: 1,
+        name: "Wordpress",
+        path: "/assets/logos/wp-logo.webp",
+      },
+      {
+        id: 2,
+        name: "WooCommerce",
+        path: "assets/logos/woo-logo.png",
+      },
+      {
+        id: 3,
+        name: "Elementor",
+        path: "/assets/logos/elementor-logo.svg",
+      },
+      {
+        id: 4,
+        name: "Sampath Payment Gateway",
+        path: "/assets/logos/sampath-logo.png",
+      },
+    ],
+  },
+
+  {
     title: "Meezan Bugalows - Hotel Website",
     desc: "A responsive website for Meezan Bungalows, featuring a main page with general info and a shared booking form, plus individual pages for each bungalow offering details of facilities, galleries, booking forms, and immersive animations.",
     subdesc:
       "Built using React, Tailwind, TypeScript, GSAP animations, and React Router for seamless navigation, ensuring responsive, dynamic, and engaging user experiences.",
-    href: "https://www.youtube.com/watch?v=lEflo_sc82g",
-    texture: "/textures/project/project3.mp4",
+    href: "https://www.meezanbungalows.com/",
+    github: "",
+    texture: "/textures/project/meez-vid.mp4",
     logo: "/assets/project-logo3-1.png",
     logoStyle: {
       backgroundColor: "#2A1816",
@@ -186,8 +228,9 @@ export const myProjects = [
     desc: "Budget Buddy, a cross-platform React Native app (iOS/Android), offers user registration, authenticated logins, budget creation, expense tracking (image uploads), and a customizable dashboard showing total budgets, spending, and remaining balances.",
     subdesc:
       "Developed with React Native, Expo Router, Reanimated animations, Kinde authentication, plus Async Storage and Supabase for robust, secure data management.",
-    href: "https://www.youtube.com/watch?v=PuOVqP_cjkE",
-    texture: "/textures/project/project4.mp4",
+    href: "",
+    github: "https://github.com/zahranniyas/budget-buddy",
+    texture: "/textures/project/project1_1.mp4",
     logo: "/assets/project-logo4-1.png",
     logoStyle: {
       backgroundColor: "#0E1F38",
@@ -219,39 +262,38 @@ export const myProjects = [
     ],
   },
   {
-    title: "Ceylon Fruits & Spices - E-Commerce",
-    desc: "Ceylon Fruits and Spices is an e-commerce platform built with WordPress and WooCommerce, featuring announcement banners, product pages, categories, carts, featured products, user registration, wishlists, secure Sampath Bank payment gateway.",
+    title: "Frontier Advisory - Corporate Website",
+    desc: "A visually engaging, user-friendly website featuring modern design and interactive elements, showcasing the company’s services, mission, staff profiles and portfolio, with dedicated sections for scheduling appointments, publishing blogs and job postings.",
     subdesc:
-      "Built on WordPress, Elementor, WooCommerce, and WooCurrency, integrating Sampath Bank’s payment gateway for secure, seamless e-commerce transactions across multiple regions.",
-    href: "https://www.youtube.com/watch?v=Ahwoks_dawU",
-    texture: "/textures/project/project5.mp4",
-    logo: "/assets/project-logo5-1.png",
+      "Built on WordPress using Elementor and custom CSS to create a responsive, modern design and sleek animations for an engaging and seamless user experience.",
+    href: "https://frontierlk.com/",
+    github: "",
+    texture: "/textures/project/frontier-vd.mp4",
+    logo: "/assets/project-logo-front.png",
+    // logoStyle: {
+    //   backgroundColor: "#60f5a1",
+    //   background:
+    //     "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+    //   border: "0.2px solid rgba(208, 213, 221, 1)",
+    //   boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
+    // },
+    // spotlight: "/assets/spotlight3.png",
     logoStyle: {
-      backgroundColor: "#28010c",
-      border: "0.2px solid #360811",
-      boxShadow: "0px 0px 60px 0px #ff5b5b4d",
+      backgroundColor: "#0E1F38",
+      border: "0.2px solid #0E2D58",
+      boxShadow: "0px 0px 60px 0px #2F67B64D",
     },
-    spotlight: "/assets/spotlight5-1.png",
+    spotlight: "/assets/spotlight4.png",
     tags: [
       {
         id: 1,
-        name: "Wordpress",
+        name: "Worpress",
         path: "/assets/logos/wp-logo.webp",
       },
       {
         id: 2,
-        name: "WooCommerce",
-        path: "assets/logos/woo-logo.png",
-      },
-      {
-        id: 3,
         name: "Elementor",
-        path: "/assets/logos/elementor-logo.svg",
-      },
-      {
-        id: 4,
-        name: "Sampath Payment Gateway",
-        path: "/assets/logos/sampath-logo.png",
+        path: "assets/logos/elementor-logo.svg",
       },
     ],
   },
