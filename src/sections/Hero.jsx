@@ -1,6 +1,5 @@
 import { PerspectiveCamera } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import HackerRoom from "../components/HackerRoom";
 import { Suspense } from "react";
 import CanvasLoader from "../components/CanvasLoader";
 import { useMediaQuery } from "react-responsive";
@@ -10,9 +9,9 @@ import ReactLogo from "../components/ReactLogo";
 import Cube from "../components/Cube";
 import Rings from "../components/Rings";
 import HeroCamera from "../components/HeroCamera";
-import Button from "../components/Button";
 import HeroPc from "../components/HeroPc";
 import HeroBtn from "../components/HeroBtn";
+import { FaPaintbrush } from "react-icons/fa6";
 
 const Hero = () => {
   const isSmall = useMediaQuery({ maxWidth: 440 });
@@ -66,7 +65,11 @@ const Hero = () => {
           Hi, I&apos;m Zaharan Niyas <span className="waving-hand">👋</span>
         </p>
         <a href="#about" className="">
-          <HeroBtn title="Let's Create" containerClass="sm:w-fit w-full " />
+          <HeroBtn
+            title="Let's Create"
+            containerClass="sm:w-fit w-full"
+            icon={<FaPaintbrush />}
+          />
         </a>
       </div>
     </section>

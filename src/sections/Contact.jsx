@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const formRef = useRef();
@@ -30,23 +31,29 @@ const Contact = () => {
       );
 
       setLoading(false);
-
-      alert("Your message has been sent!");
-
+      Swal.fire({
+        title: "Success!",
+        text: "Your message has been sent!",
+        icon: "success",
+      });
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
       setLoading(false);
       console.log(error);
-      alert("Something went wrong. Please try again later!");
+      Swal.fire({
+        title: "Oops...",
+        text: "Something went wrong. Please contact me via email or phone",
+        icon: "error",
+      });
     }
   };
 
   return (
-    <section className="c-space my-20">
+    <section className="c-space my-20" id="contact">
       <div
         className="relative min-h-screen flex items-center justify-center flex-col rounded-3xl overflow-hidden border border-[#494949] "
         style={{
-          backgroundImage: "url(/assets/contact-bg.jpg)",
+          backgroundImage: "url(/assets/contact-bg-3.jpg)",
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",

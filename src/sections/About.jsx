@@ -1,5 +1,3 @@
-import Globe from "react-globe.gl";
-import Button from "../components/Button";
 import { useState } from "react";
 
 const About = () => {
@@ -35,7 +33,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/grid2.png"
+              src="/assets/grid-tech.png"
               alt="grid-2"
               className="w-full sm:h-[276px] h-fit object-contain"
             />
@@ -52,7 +50,7 @@ const About = () => {
         <div className="col-span-1 xl:row-span-4">
           <div className="grid-container">
             <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
-              <Globe
+              {/* <Globe
                 height={326}
                 width={326}
                 backgroundColor="rgba(0,0,0,0)"
@@ -70,36 +68,41 @@ const About = () => {
                     size: 20,
                   },
                 ]}
+              /> */}
+              <img
+                src="/assets/grid-design.png"
+                alt="grid-2"
+                className="w-full sm:h-[276px] h-fit object-contain"
               />
             </div>
             <div>
               <p className="grid-headtext">
-                I&apos;m very flexible with time zone communications and
-                locations
+                Creative UI/UX Designer Skilled in Visual Tools
               </p>
               <p className="grid-subtext">
-                I&apos;m based in Colombo, Sri Lanka and open to remote work
-                worldwide
+                I&apos;m skilled in UI/UX Design with expertise in tools like
+                Adobe Photoshop, Illustrator, After Effects, Premiere Pro,
+                Blender, and Figma. Crafting engaging visuals, animations, and
+                user-centered digital experiences.
               </p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
             </div>
           </div>
         </div>
         <div className="xl:col-span-2 xl:row-span-3">
           <div className="grid-container">
             <img
-              src="/assets/grid3.png"
+              src="/assets/grid-edu.png"
               alt="grid-3"
               className="w-full sm:h-[266px] h-fit object-contain"
             />
             <div>
               <p className="grid-headtext">My Educational Achievements</p>
               <p className="grid-subtext">
-                I am currently in the final semester of my BSc (Hons) in
-                Computer Science, specializing in Software Engineering, degree
-                from Kingston University, London, UK. Additionally, I hold a
-                Pearson UK Level 5 HND in Web & App Development and an Advanced
-                Diploma in UX Design from AMDT.
+                I have completed my BSc (Hons) in Computer Science, specializing
+                in Software Engineering, degree from Kingston University,
+                London, UK. Additionally, I hold a Pearson UK Level 5 HND in Web
+                & App Development and an Advanced Diploma in UX Design from
+                AMDT.
               </p>
             </div>
           </div>

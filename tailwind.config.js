@@ -6,8 +6,14 @@ export default {
       fontFamily: {
         generalsans: ["General Sans", "sans-serif"],
         outfit: ["Outfit", "sans-serif"],
+        urbanist: ["Urbanist", "sans-serif"],
       },
       colors: {
+        primary: {
+          DEFAULT: "#061019",
+          100: "#050c13",
+          200: "#0b1c2a",
+        },
         black: {
           DEFAULT: "#000",
           100: "#010103",

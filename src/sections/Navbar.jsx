@@ -4,8 +4,18 @@ import { navLinks } from "../constants";
 const NavItems = () => {
   return (
     <ul className="nav-ul">
-      {navLinks.map((item) => (
+      {navLinks.slice(0, 4).map((item) => (
         <li key={item.id} className="nav-li">
+          <a href={item.href} className="nav-li_a" onClick={() => {}}>
+            {item.name}
+          </a>
+        </li>
+      ))}
+      {navLinks.slice(4).map((item) => (
+        <li
+          key={item.id}
+          className="nav-li sm:border-neutral-600 sm:border sm:px-4 sm:py-2 sm:rounded-md cursor-pointer"
+        >
           <a href={item.href} className="nav-li_a" onClick={() => {}}>
             {item.name}
           </a>
@@ -23,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-primary-100/90">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a

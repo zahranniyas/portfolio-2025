@@ -1,21 +1,26 @@
 export const navLinks = [
   {
     id: 1,
-    name: "Home",
-    href: "#home",
-  },
-  {
-    id: 2,
     name: "About",
     href: "#about",
   },
   {
-    id: 3,
+    id: 2,
     name: "Work",
     href: "#work",
   },
   {
+    id: 3,
+    name: "Projects",
+    href: "#projects",
+  },
+  {
     id: 4,
+    name: "Clients",
+    href: "#clients",
+  },
+  {
+    id: 5,
     name: "Contact",
     href: "#contact",
   },
@@ -57,51 +62,52 @@ export const clientReviews = [
 ];
 
 export const myProjects = [
-  // {
-  //   title: "Windsor Castle Banquet - Booking System",
-  //   desc: "Developed a comprehensive, responsive booking management system featuring role-based access, temporary bookings with automated reminders, integrated payments and discounts, post-event billing, VAT support, and a dashboard for real-time revenue and booking insights.",
-  //   subdesc:
-  //     "A modern web solution leveraging React (Vite), Tailwind, GSAP on the frontend, with Node.js (Express) and MongoDB powering the backend, hosted in a VPS hosting",
-  //   href: "https://www.youtube.com/watch?v=zfAb95tJvZQ",
-  //   texture: "/textures/project/frontier-vd.mp4",
-  //   logo: "/assets/project-logo-front.png",
+  {
+    title: "Windsor Castle Banquet - Booking System",
+    desc: "Developed a comprehensive, responsive booking management system featuring role-based access, temporary bookings with automated reminders, integrated payments and discounts, post-event billing, VAT support, and a dashboard for real-time revenue and booking insights.",
+    subdesc:
+      "A modern web solution leveraging React (Vite), Tailwind, GSAP on the frontend, with Node.js (Express) and MongoDB powering the backend, hosted in a VPS hosting",
+    href: "",
+    github: "",
+    texture: "/textures/project/windsor-vid.mp4",
+    logo: "/assets/project-logo1-1.png",
 
-  //   logoStyle: {
-  //     backgroundColor: "#60f5a1",
-  //     background:
-  //       "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
-  //     border: "0.2px solid rgba(208, 213, 221, 1)",
-  //     boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
-  //   },
-  //   spotlight: "/assets/spotlight3.png",
-  //   tags: [
-  //     {
-  //       id: 1,
-  //       name: "React.js",
-  //       path: "/assets/react.svg",
-  //     },
-  //     {
-  //       id: 2,
-  //       name: "TailwindCSS",
-  //       path: "assets/tailwindcss.png",
-  //     },
-  //     {
-  //       id: 3,
-  //       name: "GSAP",
-  //       path: "/assets/logos/gsap-logo.svg",
-  //     },
-  //     {
-  //       id: 4,
-  //       name: "Node.js",
-  //       path: "/assets/logos/nodejs.png",
-  //     },
-  //     {
-  //       id: 5,
-  //       name: "MongoDB",
-  //       path: "/assets/logos/mongodb-icon.svg",
-  //     },
-  //   ],
-  // },
+    logoStyle: {
+      backgroundColor: "#60f5a1",
+      background:
+        "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+      border: "0.2px solid rgba(208, 213, 221, 1)",
+      boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
+    },
+    spotlight: "/assets/spotlight3.png",
+    tags: [
+      {
+        id: 1,
+        name: "React.js",
+        path: "/assets/react.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "assets/tailwindcss.png",
+      },
+      {
+        id: 3,
+        name: "GSAP",
+        path: "/assets/logos/gsap-logo.svg",
+      },
+      {
+        id: 4,
+        name: "Node.js",
+        path: "/assets/logos/nodejs.png",
+      },
+      {
+        id: 5,
+        name: "MongoDB",
+        path: "/assets/logos/mongodb-icon.svg",
+      },
+    ],
+  },
 
   {
     title: "Sincler 3x - a 3D Phone Website",
@@ -217,7 +223,7 @@ export const myProjects = [
         path: "/assets/typescript.png",
       },
       {
-        id: 3,
+        id: 4,
         name: "GSAP",
         path: "/assets/logos/gsap-logo.svg",
       },
@@ -294,6 +300,44 @@ export const myProjects = [
         id: 2,
         name: "Elementor",
         path: "assets/logos/elementor-logo.svg",
+      },
+    ],
+  },
+  {
+    title: "Talent Hub - Culinary School Website",
+    desc: "Built a responsive, dynamic website for Talent Hub Academy featuring slideshows, profile video, course carousel, pop-up application form, testimonials, events, FAQs, and a headless CMS via Strapi for client-managed content.",
+    subdesc:
+      "Built using React, Tailwind, and GSAP for smooth animations, with Strapi as a headless CMS for dynamic, client-managed content updates and seamless multi-device user experiences",
+    href: "https://www.talenthublk.com/",
+    github: "",
+    texture: "/textures/project/talenthub-vid.mp4",
+    logo: "/assets/project-logo-th.png",
+    logoStyle: {
+      backgroundColor: "#28010c",
+      border: "0.2px solid #360811",
+      boxShadow: "0px 0px 60px 0px #ff5b5b4d",
+    },
+    spotlight: "/assets/spotlight5-1.png",
+    tags: [
+      {
+        id: 1,
+        name: "React.js",
+        path: "/assets/react.svg",
+      },
+      {
+        id: 2,
+        name: "TailwindCSS",
+        path: "assets/tailwindcss.png",
+      },
+      {
+        id: 3,
+        name: "GSAP",
+        path: "/assets/logos/gsap-logo.svg",
+      },
+      {
+        id: 4,
+        name: "Strapi",
+        path: "/assets/logos/strapi-logo.png",
       },
     ],
   },

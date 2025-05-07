@@ -1,5 +1,5 @@
-import Clients from "./components/Clients";
-import Projects from "./components/Projects";
+import Clients from "./sections/Clients";
+import Projects from "./sections/Projects";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
 import Experience from "./sections/Experience";
