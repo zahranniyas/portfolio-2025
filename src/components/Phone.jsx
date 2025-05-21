@@ -7,7 +7,9 @@ const Phone = (props) => {
   const group = useRef();
   const { nodes, materials } = useGLTF("/models/phone-screen-03.glb");
 
-  const txt = useVideoTexture("/textures/project/project1_1.mp4");
+  const txt = useVideoTexture(
+    props.texture ? props.texture : "/textures/project/proj-tax.mp4"
+  );
 
   useEffect(() => {
     if (txt) {

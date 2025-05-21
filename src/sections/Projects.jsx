@@ -61,24 +61,44 @@ const Projects = () => {
                 </div>
               ))}
             </div>
-            {currentProject.github !== "" ? (
-              <div className="text-white-600 flex items-center gap-2 hover:text-white transition-all">
-                <img
-                  src="/assets/github.svg"
-                  alt="github-logo"
-                  className="w-5"
-                />
-                <a
-                  href={currentProject.github}
-                  target="_blank"
-                  className="border-b-[1px] border-white-700 cursor-pointer"
-                >
-                  GitHub
-                </a>
-              </div>
-            ) : (
-              ""
-            )}
+            <div className="flex gap-5">
+              {currentProject.github !== "" ? (
+                <div className="text-white-600 flex items-center gap-2 hover:text-white transition-all">
+                  <img
+                    src="/assets/github.svg"
+                    alt="github-logo"
+                    className="w-5"
+                  />
+                  <a
+                    href={currentProject.github}
+                    target="_blank"
+                    className="border-b-[1px] border-white-700 cursor-pointer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              ) : (
+                ""
+              )}
+              {currentProject.behance !== "" ? (
+                <div className="text-white-600 flex items-center gap-2 hover:text-white transition-all">
+                  <img
+                    src="/assets/behance-logo.jpg"
+                    alt="behance-logo"
+                    className="w-5"
+                  />
+                  <a
+                    href={currentProject.behance}
+                    target="_blank"
+                    className="border-b-[1px] border-white-700 cursor-pointer"
+                  >
+                    Behance
+                  </a>
+                </div>
+              ) : (
+                ""
+              )}
+            </div>
             {currentProject.href !== "" ? (
               <a
                 href={currentProject.href}
@@ -120,13 +140,13 @@ const Projects = () => {
             <directionalLight position={[10, 10, 5]} />
             <Center>
               <Suspense fallback={<CanvasLoader />}>
-                {selectedProjectIndex === 4 ? (
+                {selectedProjectIndex === 2 || selectedProjectIndex === 5 ? (
                   <group
                     scale={3}
                     position={[-0.5, -4.5, 0]}
                     rotation={[0, -0, 1, 0]}
                   >
-                    <Phone />
+                    <Phone texture={currentProject.texture} />
                   </group>
                 ) : (
                   <group

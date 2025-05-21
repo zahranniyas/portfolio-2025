@@ -69,6 +69,7 @@ export const myProjects = [
       "A modern web solution leveraging React (Vite), Tailwind, GSAP on the frontend, with Node.js (Express) and MongoDB powering the backend, hosted in a VPS hosting",
     href: "",
     github: "",
+    behance: "",
     texture: "/textures/project/windsor-vid.mp4",
     logo: "/assets/project-logo1-1.png",
 
@@ -116,6 +117,7 @@ export const myProjects = [
       "Developed with React (Vite), Tailwind, GSAP, Three.js for seamless 3D interactions, plus Blender and After Effects for stunning and integrated 3D animations.",
     href: "https://sincler-phone-3x.vercel.app/",
     github: "https://github.com/zahranniyas/sincler-phone-3x",
+    behance: "",
     texture: "/textures/project/sincler-vd.mp4",
     logo: "/assets/project-logo2-1.png",
     logoStyle: {
@@ -153,12 +155,53 @@ export const myProjects = [
     ],
   },
   {
+    title: "Budget Buddy - Budget App",
+    desc: "Budget Buddy, a cross-platform React Native app (iOS/Android), offers user registration, authenticated logins, budget creation, expense tracking (image uploads), and a customizable dashboard showing total budgets, spending, and remaining balances.",
+    subdesc:
+      "Developed with React Native, Expo Router, Reanimated animations, Kinde authentication, plus Async Storage and Supabase for robust, secure data management.",
+    href: "",
+    github: "https://github.com/zahranniyas/budget-buddy",
+    behance:
+      "https://www.behance.net/gallery/225492091/Budget-Expense-Tracker-Mobile-App-UI-React-Native",
+    texture: "/textures/project/project1_1.mp4",
+    logo: "/assets/project-logo4-1.png",
+    logoStyle: {
+      backgroundColor: "#0E1F38",
+      border: "0.2px solid #0E2D58",
+      boxShadow: "0px 0px 60px 0px #2F67B64D",
+    },
+    spotlight: "/assets/spotlight4.png",
+    tags: [
+      {
+        id: 1,
+        name: "React Native",
+        path: "/assets/logos/rn-logo.png",
+      },
+      {
+        id: 2,
+        name: "Expo",
+        path: "assets/logos/expo-logo.png",
+      },
+      {
+        id: 3,
+        name: "Kinde",
+        path: "/assets/logos/kinde-logo.jpg",
+      },
+      {
+        id: 4,
+        name: "Supabase",
+        path: "/assets/logos/supabase-logo.svg",
+      },
+    ],
+  },
+  {
     title: "Ceylon Fruits & Spices - E-Commerce",
     desc: "Ceylon Fruits and Spices is an e-commerce platform built with WordPress and WooCommerce, featuring announcement banners, product pages, categories, carts, featured products, user registration, wishlists, secure Sampath Bank payment gateway.",
     subdesc:
       "Built on WordPress, Elementor, WooCommerce, and WooCurrency, integrating Sampath Bank’s payment gateway for secure, seamless e-commerce transactions across multiple regions.",
     href: "https://ceylonfruitsandspices.lk/",
     github: "",
+    behance: "",
     texture: "/textures/project/cfs-vid.mp4",
     logo: "/assets/project-logo5-1.png",
     logoStyle: {
@@ -198,6 +241,7 @@ export const myProjects = [
       "Built using React, Tailwind, TypeScript, GSAP animations, and React Router for seamless navigation, ensuring responsive, dynamic, and engaging user experiences.",
     href: "https://www.meezanbungalows.com/",
     github: "",
+    behance: "",
     texture: "/textures/project/meez-vid.mp4",
     logo: "/assets/project-logo3-1.png",
     logoStyle: {
@@ -230,14 +274,16 @@ export const myProjects = [
     ],
   },
   {
-    title: "Budget Buddy - Budget App",
-    desc: "Budget Buddy, a cross-platform React Native app (iOS/Android), offers user registration, authenticated logins, budget creation, expense tracking (image uploads), and a customizable dashboard showing total budgets, spending, and remaining balances.",
+    title: "Taxactly - Tax Management App",
+    desc: "Taxactly, a cross-platform React Native tax app built for the audit firm AAA Associates, lets users create profiles, log in, enter employment, business, investment and other income, apply reliefs, see annual tax due, and receive deadline alerts.",
     subdesc:
-      "Developed with React Native, Expo Router, Reanimated animations, Kinde authentication, plus Async Storage and Supabase for robust, secure data management.",
+      "Developed with React Native, Node.js, Express, and MongoDB, it leverages JWT auth, notifications, and REST APIs for efficient tax management. (Will be deployed to apps store soon)",
     href: "",
-    github: "https://github.com/zahranniyas/budget-buddy",
-    texture: "/textures/project/project1_1.mp4",
-    logo: "/assets/project-logo4-1.png",
+    github: "",
+    behance:
+      "https://www.behance.net/gallery/226394767/Tax-Management-Mobile-App-UIUX-Design-React-Native",
+    texture: "/textures/project/proj-tax.mp4",
+    logo: "/assets/taxactly-icon.png",
     logoStyle: {
       backgroundColor: "#0E1F38",
       border: "0.2px solid #0E2D58",
@@ -257,13 +303,13 @@ export const myProjects = [
       },
       {
         id: 3,
-        name: "Kinde",
-        path: "/assets/logos/kinde-logo.jpg",
+        name: "Node.js",
+        path: "/assets/logos/nodejs.png",
       },
       {
         id: 4,
-        name: "Supabase",
-        path: "/assets/logos/supabase-logo.svg",
+        name: "MongoDB",
+        path: "/assets/logos/mongodb-icon.svg",
       },
     ],
   },
@@ -274,6 +320,7 @@ export const myProjects = [
       "Built on WordPress using Elementor and custom CSS to create a responsive, modern design and sleek animations for an engaging and seamless user experience.",
     href: "https://frontierlk.com/",
     github: "",
+    behance: "",
     texture: "/textures/project/frontier-vd.mp4",
     logo: "/assets/project-logo-front.png",
     // logoStyle: {
@@ -310,6 +357,7 @@ export const myProjects = [
       "Built using React, Tailwind, and GSAP for smooth animations, with Strapi as a headless CMS for dynamic, client-managed content updates and seamless multi-device user experiences",
     href: "https://www.talenthublk.com/",
     github: "",
+    behance: "",
     texture: "/textures/project/talenthub-vid.mp4",
     logo: "/assets/project-logo-th.png",
     logoStyle: {

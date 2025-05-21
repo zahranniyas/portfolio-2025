@@ -14,7 +14,7 @@ const NavItems = () => {
       {navLinks.slice(4).map((item) => (
         <li
           key={item.id}
-          className="nav-li sm:border-neutral-600 sm:border sm:px-4 sm:py-2 sm:rounded-md cursor-pointer"
+          className="nav-li sm:border-neutral-600 hover:border-white sm:border sm:px-4 sm:py-2 sm:rounded-md cursor-pointer"
         >
           <a href={item.href} className="nav-li_a" onClick={() => {}}>
             {item.name}
