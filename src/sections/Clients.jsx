@@ -17,7 +17,7 @@ const Clients = () => {
                   <img
                     src={item.img}
                     alt={item.name}
-                    className="w-12 h-12 rounded-full"
+                    className="w-12 h-12 rounded-full bg-white"
                   />
                   <div className="flex flex-col">
                     <p className="font-semibold text-white-800">{item.name}</p>

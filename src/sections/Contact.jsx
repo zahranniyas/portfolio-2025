@@ -1,12 +1,17 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
-import Swal from "sweetalert2";
+import Toast from "../components/Toast";
 
 const Contact = () => {
   const formRef = useRef();
 
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
+
+  const [toast, setToast] = useState({ type: "", msg: "" });
+
+  const showToast = (type, msg) => setToast({ type, msg });
+  const hideToast = () => setToast({ type: "", msg: "" });
 
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
@@ -30,26 +35,22 @@ const Contact = () => {
         import.meta.env.VITE_EMAIL_PUBLIC_KEY
       );
 
-      setLoading(false);
-      Swal.fire({
-        title: "Success!",
-        text: "Your message has been sent!",
-        icon: "success",
-      });
+      showToast("success", "Your message has been sent!");
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
-      setLoading(false);
       console.log(error);
-      Swal.fire({
-        title: "Oops...",
-        text: "Something went wrong. Please contact me via email or phone",
-        icon: "error",
-      });
+      showToast(
+        "error",
+        "Something went wrong. Please contact me via email or phone."
+      );
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <section className="c-space my-20" id="contact">
+      <Toast type={toast.type} message={toast.msg} onClose={hideToast} />
       <div
         className="relative min-h-screen flex items-center justify-center flex-col rounded-3xl overflow-hidden border border-[#494949] "
         style={{
@@ -103,7 +104,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 className="field-input"
-                placeholder="client@example.com"
+                placeholder="Enter your email address..."
               />
             </label>
             <label className="space-y-3">

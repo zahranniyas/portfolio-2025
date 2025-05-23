@@ -11,6 +11,7 @@ const Footer = () => {
           <a
             href="https://github.com/zahranniyas"
             className="flex items-center justify-center hover:opacity-60 transition-all"
+            target="_blank"
           >
             <img
               src="/assets/github.svg"

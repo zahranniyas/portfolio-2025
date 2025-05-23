@@ -33,6 +33,15 @@ export default {
       backgroundImage: {
         terminal: "url('/assets/terminal.png')",
       },
+      keyframes: {
+        slideDown: {
+          "0%": { opacity: 0, transform: "translate(-50%, -20px)" },
+          "100%": { opacity: 1, transform: "translate(-50%, 0)" },
+        },
+      },
+      animation: {
+        slideDown: "slideDown 0.35s ease-out",
+      },
     },
   },
   plugins: [],

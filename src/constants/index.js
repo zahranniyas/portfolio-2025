@@ -53,11 +53,11 @@ export const clientReviews = [
   },
   {
     id: 4,
-    name: "Thabassum Shakir",
-    position: "Director at Elegant Charms",
-    img: "assets/review4.png",
+    name: "Namal Chandrasiri",
+    position: "Operations Manager at Windsor Castle Banquet",
+    img: "/assets/project-logo1-1.png",
     review:
-      "Zaharan was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend & backend dev are top-notch.",
+      "Zaharan was a pleasure to work with. He understood our requirements perfectly and delivered a booking system that exceeded our expectations. His skills in both frontend & backend dev are top-notch.",
   },
 ];
 
