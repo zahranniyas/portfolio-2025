@@ -1,9 +1,11 @@
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import Toast from "../components/Toast";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const formRef = useRef();
+  const recaptchaRef = useRef(null);
 
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
@@ -16,29 +18,30 @@ const Contact = () => {
   const handleChange = ({ target: { name, value } }) => {
     setForm({ ...form, [name]: value });
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     setLoading(true);
 
     try {
+      // Ask Google → returns token in 0-2 round-trips
+      const token = await recaptchaRef.current.executeAsync(); // NEW
+      recaptchaRef.current.reset(); // ready for next submit
+
       await emailjs.send(
         import.meta.env.VITE_EMAIL_SERVICE_ID,
         import.meta.env.VITE_EMAIL_TEMPLATE_ID,
         {
-          to_name: "Zaharan Niyas",
-          to_email: "zahranniyas@gmail.com",
-          from_name: form.name,
-          from_email: form.email,
-          message: form.message,
+          ...form, // name, email, message
+          "g-recaptcha-response": token, // NEW – EmailJS checks it
         },
         import.meta.env.VITE_EMAIL_PUBLIC_KEY
       );
 
       showToast("success", "Your message has been sent!");
       setForm({ name: "", email: "", message: "" });
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.error(err);
       showToast(
         "error",
         "Something went wrong. Please contact me via email or phone."
@@ -119,6 +122,14 @@ const Contact = () => {
                 placeholder="Hi Zaharan, I'm interested in..."
               />
             </label>
+
+            {/* Invisible reCAPTCHA v2 (badge shows bottom-right, per Google policy) */}
+            <ReCAPTCHA
+              sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+              size="invisible" // change to "normal" for the checkbox UI
+              ref={recaptchaRef}
+            />
+
             <button className="field-btn" type="submit" disabled={loading}>
               {loading ? "Sending..." : "Send Message"}
               <img

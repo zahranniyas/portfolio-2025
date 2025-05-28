@@ -153,6 +153,10 @@ body {
   }
 }
 
+.grecaptcha-badge {
+  visibility: hidden;
+} /* hide completely */
+
 .waving-hand {
   animation-name: wave-animation;
   animation-duration: 2.5s;

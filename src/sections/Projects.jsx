@@ -154,7 +154,6 @@ const Projects = () => {
                     position={[-0.5, -2.5, 0]}
                     rotation={[0, -0, 1, 0]}
                   >
-                    {/* <DemoComputer texture={currentProject.texture} /> */}
                     <Computer texture={currentProject.texture} />
                   </group>
                 )}

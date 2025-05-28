@@ -15,13 +15,10 @@ const Computer = (props) => {
     if (txt) {
       txt.flipY = false;
 
-      // Make sure we have the underlying HTMLVideoElement
       if (txt.image) {
-        // Optionally reset to the beginning
         txt.image.currentTime = 0;
-        // Start playing
+
         txt.image.play().catch((err) => {
-          // Some browsers block autoplay without user gesture
           console.error("Autoplay failed:", err);
         });
       }

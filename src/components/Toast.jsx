@@ -1,9 +1,7 @@
-// src/components/Toast.jsx
 import { useEffect } from "react";
 import { CheckCircleIcon, XCircleIcon } from "@heroicons/react/24/solid";
 
 export default function Toast({ type = "success", message, onClose }) {
-  // auto-dismiss after 4 s
   useEffect(() => {
     if (!message) return;
     const id = setTimeout(onClose, 4000);

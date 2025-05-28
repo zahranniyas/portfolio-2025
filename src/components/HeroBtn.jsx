@@ -1,5 +1,3 @@
-import { FaPaintbrush } from "react-icons/fa6";
-
 const HeroBtn = ({ title, containerClass, icon }) => {
   return (
     <button
